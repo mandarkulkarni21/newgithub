@@ -1,0 +1,4 @@
+<apex:page standardController="Contact">
+    <apex:pageblock title="Contacts List">
+    </apex:pageblock>
+</apex:page>

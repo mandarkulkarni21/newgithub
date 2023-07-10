@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-05-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <lightning-card>
+        <lightning-input
+            type="number"
+            lable="Number of employess"
+            value={numberOfEmployees}
+            onchange={handleChange}>
+        </lightning-input>
+        <lightning-button
+        lable="Reset"
+        onclick={reset}
+        >click me</lightning-button>    
+    </lightning-card>
+</template>

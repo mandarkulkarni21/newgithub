@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-06-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <lightning-input
+            type="number"
+            lable="Number of employess"
+            value={numberOfEmployees}
+            onchange={handleChange}>
+        </lightning-input>
+        <lightning-button
+        lable="Reset"
+        onclick={reset}
+        >click me</lightning-button>
+        <template if:true={accounts.date}>
+        <template for:each={accounts.date} for:item="account">
+           <p key={account.id}>{account.name}</p>
+        </template>
+        </template>       
+    </lightning-card>
+</template>
